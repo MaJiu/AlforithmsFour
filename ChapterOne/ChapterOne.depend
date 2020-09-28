@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1601287010 source:f:\algorithm\algorithmsfour\chapterone\main.cpp
+	<iostream>
+	<numeric>
+	<string>
+	"Queue.h"
+	"Stack.h"
+	"ArrayStack.h"
+	"Bag.h"
+
+1601282444 f:\algorithm\algorithmsfour\chapterone\stack.h
+
+1601282401 f:\algorithm\algorithmsfour\chapterone\arraystack.h
+
+1601284255 source:f:\algorithm\algorithmsfour\chapterone\queue.h
+
+1601285982 source:f:\algorithm\algorithmsfour\chapterone\bag.h
+
+1601282444 source:f:\algorithm\algorithmsfour\chapterone\stack.h
+
+1601282401 source:f:\algorithm\algorithmsfour\chapterone\arraystack.h
+
+1601284255 f:\algorithm\algorithmsfour\chapterone\queue.h
+
+1601285982 f:\algorithm\algorithmsfour\chapterone\bag.h
+
