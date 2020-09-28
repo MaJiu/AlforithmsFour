@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1601296930 source:f:\algorithm\algorithmsfour\chapterone\unionfind\unionfind\main.cpp
+	<iostream>
+	"uf4.h"
+
+1601294504 f:\algorithm\algorithmsfour\chapterone\unionfind\unionfind\uf1.h
+
+1601295577 f:\algorithm\algorithmsfour\chapterone\unionfind\unionfind\uf2.h
+
+1601296351 f:\algorithm\algorithmsfour\chapterone\unionfind\unionfind\uf3.h
+
+1601297044 f:\algorithm\algorithmsfour\chapterone\unionfind\unionfind\uf4.h
+

@@ -32,6 +32,10 @@ for (auto beg = v.begin(), end = V.end(); beg != end; ++beg) {
 2. 为 iterator 实现 ***, != , ++** 三个运算符的重载
 3. 为 Queue, Stack, Bag 实现 **begin, end** 方法
 
+### 并查集
+
+解决连通问题, 只关注是否连通，不关注之间的路径
+
 ## 日志
 
-2020年9月28日 Queue, Stack, Bag
+2020年9月28日 Queue, Stack, Bag, UnionFind
