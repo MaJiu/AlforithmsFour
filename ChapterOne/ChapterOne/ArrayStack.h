@@ -57,6 +57,7 @@ ArrayStack<T>::ArrayStack(const ArrayStack<T> &another)
 template <typename T>
 ArrayStack<T>& ArrayStack<T>::operator=(const ArrayStack<T> &rhs)
 {
+    if (this == &rhs) return *this;
     delete[] data_;
     data_ = new T[rhs.capacity_];
     for (int i=0; i<rhs.capacity_; i++) {

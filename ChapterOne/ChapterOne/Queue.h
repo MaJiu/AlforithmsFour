@@ -81,6 +81,7 @@ Queue<T>::Queue(const Queue<T> &another)
 template <typename T>
 Queue<T>& Queue<T>::operator=(const Queue<T> &rhs)
 {
+    if (this == &rhs) return *this;
     clear(); //清空重新构造
     if (rhs.empty()) return *this;
     first_ = new Node();

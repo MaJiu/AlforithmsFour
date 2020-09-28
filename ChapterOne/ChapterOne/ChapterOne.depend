@@ -24,11 +24,11 @@
 
 1601285982 f:\algorithm\algorithmsfour\chapterone\bag.h
 
-1601282401 source:f:\algorithm\algorithmsfour\chapterone\chapterone\arraystack.h
+1601299817 source:f:\algorithm\algorithmsfour\chapterone\chapterone\arraystack.h
 
-1601285982 source:f:\algorithm\algorithmsfour\chapterone\chapterone\bag.h
+1601299817 source:f:\algorithm\algorithmsfour\chapterone\chapterone\bag.h
 
-1601287010 source:f:\algorithm\algorithmsfour\chapterone\chapterone\main.cpp
+1601290081 source:f:\algorithm\algorithmsfour\chapterone\chapterone\main.cpp
 	<iostream>
 	<numeric>
 	<string>
@@ -37,15 +37,15 @@
 	"ArrayStack.h"
 	"Bag.h"
 
-1601284255 f:\algorithm\algorithmsfour\chapterone\chapterone\queue.h
+1601299832 f:\algorithm\algorithmsfour\chapterone\chapterone\queue.h
 
-1601282444 f:\algorithm\algorithmsfour\chapterone\chapterone\stack.h
+1601299826 f:\algorithm\algorithmsfour\chapterone\chapterone\stack.h
 
-1601282401 f:\algorithm\algorithmsfour\chapterone\chapterone\arraystack.h
+1601299848 f:\algorithm\algorithmsfour\chapterone\chapterone\arraystack.h
 
-1601285982 f:\algorithm\algorithmsfour\chapterone\chapterone\bag.h
+1601299848 f:\algorithm\algorithmsfour\chapterone\chapterone\bag.h
 
-1601284255 source:f:\algorithm\algorithmsfour\chapterone\chapterone\queue.h
+1601299832 source:f:\algorithm\algorithmsfour\chapterone\chapterone\queue.h
 
-1601282444 source:f:\algorithm\algorithmsfour\chapterone\chapterone\stack.h
+1601299826 source:f:\algorithm\algorithmsfour\chapterone\chapterone\stack.h
 

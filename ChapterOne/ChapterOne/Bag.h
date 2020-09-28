@@ -70,6 +70,7 @@ Bag<T>::Bag(const Bag<T> &another)
 template <typename T>
 Bag<T>& Bag<T>::operator=(const Bag<T> &rhs)
 {
+    if (this == &rhs) return *this;
     clear();
     if (rhs.empty()) return *this;
     first_ = new Node();

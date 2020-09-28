@@ -79,6 +79,7 @@ Stack<T>::Stack(const Stack<T> &another): first_(nullptr), n_(0)
 template <typename T>
 Stack<T>& Stack<T>::operator=(const Stack<T> &rhs)
 {
+    if (this == &rhs) return *this;
     clear(); //清空重新构造
     if (rhs.empty()) return *this;
     first_ = new Node();

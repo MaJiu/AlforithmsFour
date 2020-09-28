@@ -33,6 +33,10 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="main.cpp" />
+		<Unit filename="uf1.h" />
+		<Unit filename="uf2.h" />
+		<Unit filename="uf3.h" />
+		<Unit filename="uf4.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
