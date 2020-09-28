@@ -25,7 +25,7 @@ int main()
         if (word != "-") s.push(word);
         else if (!s.empty()) cout << s.pop() << " ";
     }
-    cout << "( " << s.size() << "left on stack)" << endl;
+    cout << "( " << s.size() << " left on stack)" << endl;
     return 0;
 }
 

@@ -32,7 +32,18 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="Stack.h" />
+		<Unit filename="ArrayStack.h">
+			<Option compile="1" />
+		</Unit>
+		<Unit filename="Bag.h">
+			<Option compile="1" />
+		</Unit>
+		<Unit filename="Queue.h">
+			<Option compile="1" />
+		</Unit>
+		<Unit filename="Stack.h">
+			<Option compile="1" />
+		</Unit>
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
