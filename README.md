@@ -36,6 +36,12 @@ for (auto beg = v.begin(), end = V.end(); beg != end; ++beg) {
 
 解决连通问题, 只关注是否连通，不关注之间的路径
 
+## 第三章 查找
+
+
+
 ## 日志
 
 2020年9月28日 Queue, Stack, Bag, UnionFind
+
+2020年9月29日 符号表无序链表的顺序查找
