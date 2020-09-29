@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1601388148 source:f:\algorithm\algorithmsfour\chapterthree\symboltable\main.cpp
+	<iostream>
+	<string>
+	"SequentialSearchST.h"
+
+1601388525 f:\algorithm\algorithmsfour\chapterthree\symboltable\sequentialsearchst.h
+	<set>
+
+1601299848 f:\algorithm\algorithmsfour\chapterone\chapterone\bag.h
+

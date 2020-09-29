@@ -2,29 +2,29 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="main.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
+	<File name="main.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="560" topLine="59" />
+			<Cursor1 position="341" topLine="15" />
 		</Cursor>
 	</File>
-	<File name="Stack.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="8" zoom_2="0">
+	<File name="Stack.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="8" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2112" topLine="0" />
+			<Cursor1 position="2375" topLine="81" />
 		</Cursor>
 	</File>
-	<File name="Bag.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+	<File name="ArrayStack.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2141" topLine="73" />
+			<Cursor1 position="1291" topLine="56" />
 		</Cursor>
 	</File>
-	<File name="Queue.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
+	<File name="Queue.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2002" topLine="78" />
+			<Cursor1 position="1984" topLine="78" />
 		</Cursor>
 	</File>
-	<File name="ArrayStack.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+	<File name="Bag.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="130" topLine="75" />
+			<Cursor1 position="162" topLine="0" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>
