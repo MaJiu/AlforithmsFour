@@ -33,6 +33,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="BinarySearchST.h" />
 		<Unit filename="SequentialSearchST.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>

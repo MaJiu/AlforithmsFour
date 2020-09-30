@@ -45,3 +45,5 @@ for (auto beg = v.begin(), end = V.end(); beg != end; ++beg) {
 2020年9月28日 Queue, Stack, Bag, UnionFind
 
 2020年9月29日 符号表无序链表的顺序查找
+
+2020年9月30日 二分查找符号表
