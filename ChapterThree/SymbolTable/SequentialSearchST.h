@@ -31,6 +31,7 @@ public:
                     pos->val = new V(val);
                     size_++;
                     keys_.insert(key);
+                    return;
                 }
                 // 已经存在 进行更新
                 *(pos->val) = val;
@@ -50,15 +51,18 @@ public:
         return nullptr;
     }
 
-    // 延迟删除 置 val = nullptr
+    // 延迟删除
     void ddelete(const K &key) {
-        Node *v = get(key);
-        if (v == nullptr) return;
-        delete v;
-        put(key, nullptr);
-        size_--;
-        keys_.erase(key);
+        for (Node *pos = first_; pos != nullptr; pos = pos->next) {
+            if (key == pos->key) {
+                delete pos->val;
+                pos->val = nullptr;
+                size_--;
+                keys_.erase(key);
+            }
+        }
     }
+
 
     bool contains(const K &key) { return get(key) != nullptr; }
     bool empty() { return size_ == 0; }
