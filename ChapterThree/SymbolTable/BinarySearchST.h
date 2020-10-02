@@ -50,7 +50,7 @@ public:
     K max() { return keys_[size_-1]; }
 
     // 排名为 k 的键
-    K select(int k) { return keys_[k]; }
+    K select(int k) { return keys_[k]; } // 没有判断 k 是否小于 size_
     bool contains(const K &key) { return get(key) != nullptr; }
     int empty() { return size_ == 0; }
     int size() { return size_; }
