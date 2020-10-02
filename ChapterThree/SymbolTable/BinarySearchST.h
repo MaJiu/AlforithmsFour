@@ -66,8 +66,11 @@ void BinarySearchST<K,V>::resize(int new_capacity)
     K *new_keys = new K[new_capacity];
     V *new_vals = new V[new_capacity];
     for (int i=0; i<size_; i++) {
-        new_keys[i] = keys_[i];
-        new_vals[i] = vals_[i];
+//        new_keys[i] = keys_[i];
+//        new_vals[i] = vals_[i];
+        // 使用 移动赋值函数
+        new_keys[i] = std::move(keys_[i]);
+        new_vals[i] = std::move(vals_[i]);
     }
     delete[] keys_;
     delete[] vals_;
@@ -109,8 +112,8 @@ void BinarySearchST<K, V>::ddelete(const K & key)
     int i = rank(key);
     if (i >= size_ || keys_[i] != key) return;
     for (int j=i; j<size_-1; j++) {
-        keys_[i] = keys_[i+1];
-        vals_[i] = vals_[i+1];
+        keys_[j] = keys_[j+1];
+        vals_[j] = vals_[j+1];
     }
     size_--;
     if ( 0 < size_ && size_ == capacity_ / 4) resize(capacity_ / 2);

@@ -1,3 +1,4 @@
+#include <ctime>
 #include <iostream>
 #include <string>
 
@@ -31,8 +32,9 @@ int cnt = 0;
 
 int main(int argc, char** args)
 {
-    // system("chcp 65001");
+    system("chcp 65001");
     min_len = stoi(args[1]);
+    clock_t t = clock(); //开始计时
     string word;
     while (cin >> word) {
         cnt++;
@@ -59,10 +61,13 @@ int main(int argc, char** args)
     // 测试有序的ST
     #ifdef ORDERED
     cout << "最小的单词: " << st.min() << "\n";
-    cout << "排名为的单词: " << st.select(1) << "\n";
+    cout << "排名为 0 的单词: " << st.select(0) << "\n";
+    cout << "排名为 1 的单词: " << st.select(1) << "\n";
+    cout << "排名为 -1 的单词: " << st.select(st.size()-1) << "\n";
     cout << "最大的单词: " << st.max() << "\n";
     #endif // ORDERED
-
+    t = clock() - t;
+    cout << "花费时间: " << t << " clicks" << endl;
     return 0;
 }
 
