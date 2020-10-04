@@ -1,11 +1,12 @@
 # depslib dependency file v1.0
-1601648103 source:f:\algorithm\algorithmsfour\chapterthree\symboltable\main.cpp
+1601820717 source:f:\algorithm\algorithmsfour\chapterthree\symboltable\main.cpp
 	<ctime>
 	<iostream>
 	<string>
 	"SequentialSearchST.h"
 	"BinarySearchST.h"
 	"BST.h"
+	"RedBlackBST.h"
 
 1601453890 f:\algorithm\algorithmsfour\chapterthree\symboltable\sequentialsearchst.h
 	<set>
@@ -15,6 +16,9 @@
 1601628961 f:\algorithm\algorithmsfour\chapterthree\symboltable\binarysearchst.h
 	<vector>
 
-1601648396 f:\algorithm\algorithmsfour\chapterthree\symboltable\bst.h
+1601738245 f:\algorithm\algorithmsfour\chapterthree\symboltable\bst.h
+	<vector>
+
+1601820819 f:\algorithm\algorithmsfour\chapterthree\symboltable\redblackbst.h
 	<vector>
 

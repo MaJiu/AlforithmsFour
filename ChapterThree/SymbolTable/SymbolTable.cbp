@@ -11,7 +11,7 @@
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option parameters="5" />
+				<Option parameters="1" />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
@@ -33,7 +33,9 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="BST.h" />
 		<Unit filename="BinarySearchST.h" />
+		<Unit filename="RedBlackBST.h" />
 		<Unit filename="SequentialSearchST.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>

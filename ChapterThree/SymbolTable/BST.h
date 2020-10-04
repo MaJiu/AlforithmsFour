@@ -47,9 +47,9 @@ public:
     K select(int i) { return select(root, i)->key; }
 
     int rank(const K &key) { return rank(root, key); }
-    vector<K> keys() { return keys(min(), max()); }
-    vector<K> keys(const K &lo, const K &hi) {
-        vector<K> ks;
+    std::vector<K> keys() { return keys(min(), max()); }
+    std::vector<K> keys(const K &lo, const K &hi) {
+        std::vector<K> ks;
         keys(root, ks, lo, hi);
         return ks;
     }
@@ -88,7 +88,7 @@ private:
     Node* select(Node *troot, int i);
 
     int rank(const Node *troot, const K &key);
-    void keys(const Node* troot, vector<K> &ks, const K &lo, const K &hi);
+    void keys(const Node* troot, std::vector<K> &ks, const K &lo, const K &hi);
 };
 
 template <typename K, typename V>
@@ -212,7 +212,7 @@ typename BST<K, V>::Node* BST<K, V>::ddelete(Node *troot, const K &key)
 }
 
 template <typename K, typename V>
-void BST<K, V>::keys(const Node* troot, vector<K> &ks, const K &lo, const K &hi)
+void BST<K, V>::keys(const Node* troot, std::vector<K> &ks, const K &lo, const K &hi)
 {
     if (troot == nullptr) return;
     // 中序遍历

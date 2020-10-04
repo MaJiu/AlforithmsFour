@@ -7,11 +7,21 @@
 * SEQ SequentialSearchST
 * BIN BinarySerachST
 * TSB BST
-*
+* RBT RedBlackBST
 */
-#define BIN
-#define WC // 标记是否是有序符号表
+#define RBT
 
+/**
+* WC 测试数据 tale.txt tinyTale.txt leipzig1M.txt
+* ORDERED 测试数据 ordered.txt
+*/
+#define WC // WC  或 ORDERED
+
+/**
+* TEST 测试 delete_min, delete_max, rank, ceil, floor
+* NOTEST 不进行测试
+*/
+#define TEST
 using namespace std;
 
 #ifdef SEQ
@@ -29,6 +39,10 @@ using namespace std;
     BST<string, int> st;
 #endif // BST
 
+#ifdef RBT
+    #include "RedBlackBST.h"
+    RedBlackBST<string, int> st;
+#endif // RBT
 
 
 // 分析 tinyTale.txt tale.txt leipzig1M.txt
@@ -68,7 +82,7 @@ int main(int argc, char** args)
     cout << "最大的单词: " << st.max() << "\n";
     cout << "单词 the 的排名: " << st.rank("the") << "\n";
 
-    #ifdef TSB
+    #ifdef TEST
     cout << "删除最大和最小的单词以及 the \n";
     st.delete_max();
     st.delete_min();
@@ -78,7 +92,7 @@ int main(int argc, char** args)
     cout << "ceil(\"x\"): " << st.ceil("x") << "\n";
     cout << "大于等于c 小于等于x 的单词\n";
     for (string& word: st.keys("c", "x")) cout << word << "\n";
-    #endif // TSB
+    #endif // TEST
 
     #endif // ORDERED
 
@@ -102,7 +116,7 @@ void word_count()
     }
     st.ddelete(" ");
 
-    // cout << "该文本包含的长度大于 " << min_len << " 单词以及对应的数量:\n";
+    cout << "该文本包含的长度大于 " << min_len << " 单词以及对应的数量:\n";
     // print_details();
     cout << "单词数量: " << cnt << "\n";
     cout << "出现频率最多的单词: ";
