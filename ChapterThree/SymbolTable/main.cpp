@@ -8,8 +8,9 @@
 * BIN BinarySerachST
 * TSB BST
 * RBT RedBlackBST
+* SCH SeparateChainingHash
 */
-#define RBT
+#define SCH
 
 /**
 * WC 测试数据 tale.txt tinyTale.txt leipzig1M.txt
@@ -44,6 +45,10 @@ using namespace std;
     RedBlackBST<string, int> st;
 #endif // RBT
 
+#ifdef SCH
+    #include "SeparateChainingHashST.h"
+    SeparateChainingHashST<string, int> st;
+#endif // SCH
 
 // 分析 tinyTale.txt tale.txt leipzig1M.txt
 void word_count();
@@ -117,7 +122,7 @@ void word_count()
     st.ddelete(" ");
 
     cout << "该文本包含的长度大于 " << min_len << " 单词以及对应的数量:\n";
-    // print_details();
+    //print_details();
     cout << "单词数量: " << cnt << "\n";
     cout << "出现频率最多的单词: ";
     cout << high_frequency << " " << *(st.get(high_frequency)) << "\n";

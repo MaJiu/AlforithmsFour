@@ -50,6 +50,10 @@ for (auto beg = v.begin(), end = V.end(); beg != end; ++beg) {
 
 红黑树的实现可以先参考2-3查找树
 
+### 基于拉链法的散列表
+
+C++ 也有hash 函数(对象)，是 functional 的一个类模板，重载了函数调用运算符，返回值是 T:size_type
+
 ## 日志
 
 2020年09月28日 
@@ -75,3 +79,9 @@ for (auto beg = v.begin(), end = V.end(); beg != end; ++beg) {
 ​	目前基于二分搜索版本的符号表不能处理测试数据 leipzig1M.txt
 
 ​	当前版本红黑树和二分查找树效率为什么差不多？
+
+2020年10月05日
+
+​	拉链法的散列表
+
+​    目前基于拉链法的散列表的符号表也🙃🙃不能处理测试数据 leipzig1M.txt
