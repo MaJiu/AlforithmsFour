@@ -14,6 +14,7 @@ class BinarySearchST {
 
 public:
     explicit BinarySearchST(int capacity = 20): capacity_(capacity), size_(0) {
+        // 如果 K 和 V 没有默认构造函数这里就会出现问题
         keys_ = new K[capacity];
         vals_ = new V[capacity];
     }

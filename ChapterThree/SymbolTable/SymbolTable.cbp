@@ -35,7 +35,9 @@
 		</Compiler>
 		<Unit filename="BST.h" />
 		<Unit filename="BinarySearchST.h" />
+		<Unit filename="LinearProbingHashST.h" />
 		<Unit filename="RedBlackBST.h" />
+		<Unit filename="SeparateChainingHashST.h" />
 		<Unit filename="SequentialSearchST.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>

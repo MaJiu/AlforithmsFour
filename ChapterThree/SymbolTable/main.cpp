@@ -8,10 +8,12 @@
 * BIN BinarySerachST
 * TSB BST
 * RBT RedBlackBST
-* SCH SeparateChainingHash
+* SCH SeparateChainingHashST
+* LPH LinearProbingHashST
 */
-#define SCH
+#define LPH
 
+// 测试模式
 /**
 * WC 测试数据 tale.txt tinyTale.txt leipzig1M.txt
 * ORDERED 测试数据 ordered.txt
@@ -47,8 +49,13 @@ using namespace std;
 
 #ifdef SCH
     #include "SeparateChainingHashST.h"
-    SeparateChainingHashST<string, int> st;
+    SeparateChainingHashST<string, int> st(534580);
 #endif // SCH
+
+#ifdef LPH
+    #include "LinearProbingHashST.h"
+    LinearProbingHashST<string, int> st;
+#endif // LPH
 
 // 分析 tinyTale.txt tale.txt leipzig1M.txt
 void word_count();
