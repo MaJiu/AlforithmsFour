@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1602428488 source:f:\algorithm\algorithmsfour\chapterfive\tries\main.cpp
+	<ctime>
+	<iostream>
+	"TrieST.h"
+	"TrieST.h"
+	"TST.h"
+
+1602420239 f:\algorithm\algorithmsfour\chapterfive\tries\triest.h
+	<string>
+	<vector>
+
+1602428517 f:\algorithm\algorithmsfour\chapterfive\tries\tst.h
+	<string>
+	<vector>
+

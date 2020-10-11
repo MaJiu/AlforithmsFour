@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1602253863 source:f:\algorithm\algorithmsfour\chapterfive\stringsorts\main.cpp
+1602403782 source:f:\algorithm\algorithmsfour\chapterfive\stringsorts\main.cpp
 	<iostream>
 	<algorithm>
 	<iterator>
@@ -11,12 +11,12 @@
 
 1602250144 f:\algorithm\algorithmsfour\chapterfive\stringsorts\lsd.h
 
-1602251612 source:f:\algorithm\algorithmsfour\chapterfive\stringsorts\lsd.cpp
+1602404985 source:f:\algorithm\algorithmsfour\chapterfive\stringsorts\lsd.cpp
 	<string>
 	<vector>
 	"LSD.h"
 
-1602251526 source:f:\algorithm\algorithmsfour\chapterfive\stringsorts\msd.cpp
+1602405002 source:f:\algorithm\algorithmsfour\chapterfive\stringsorts\msd.cpp
 	<string>
 	<vector>
 	"MSD.h"
@@ -25,7 +25,7 @@
 
 1602251445 f:\algorithm\algorithmsfour\chapterfive\stringsorts\quick3string.h
 
-1602253840 source:f:\algorithm\algorithmsfour\chapterfive\stringsorts\quick3.cpp
+1602405002 source:f:\algorithm\algorithmsfour\chapterfive\stringsorts\quick3.cpp
 	<vector>
 	<string>
 

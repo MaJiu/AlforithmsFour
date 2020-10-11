@@ -4,7 +4,7 @@
 #include <vector>
 #include <string>
 
-#define QQQ
+#define MSD
 
 #ifdef LSD
     #include "LSD.h"

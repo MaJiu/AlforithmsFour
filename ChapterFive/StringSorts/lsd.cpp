@@ -5,10 +5,24 @@
 // 2020-10-09-20.55
 // 算法5.1 低位优先的字符串排序
 
+// 匿名命名空间 取代 static
+namespace {
 
-static int get_index(std::string &str, int index);
+    constexpr int R = 128;
+        /**
+    * 获取字符 str[index] 的 ASCII码, 即该字符对应的索引, 也就是他在 count 数组的位置
+    * 如果 index >= str.size(), 返回 -1
+    */
+    int get_index(std::string &str, int index)
+    {
+        int length = str.size();
+        if (index >= length) return -1;
+        return static_cast<int>(str[index]);
+    }
 
-constexpr int R = 128;
+}
+
+
 void lsd_sort(std::vector<std::string> &strs)
 {
     int n = strs.size();
@@ -39,13 +53,5 @@ void lsd_sort(std::vector<std::string> &strs)
 
 }
 
-/**
-* 获取字符 str[index] 的 ASCII码, 即该字符对应的索引, 也就是他在 count 数组的位置
-* 如果 index >= str.size(), 返回 -1
-*/
-static int get_index(std::string &str, int index)
-{
-    int length = str.size();
-    if (index >= length) return -1;
-    return static_cast<int>(str[index]);
-}
+
+

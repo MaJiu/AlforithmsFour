@@ -129,7 +129,6 @@ void word_count()
     st.ddelete(" ");
 
     cout << "该文本包含的长度大于 " << min_len << " 单词以及对应的数量:\n";
-    //print_details();
     cout << "单词数量: " << cnt << "\n";
     cout << "出现频率最多的单词: ";
     cout << high_frequency << " " << *(st.get(high_frequency)) << "\n";
