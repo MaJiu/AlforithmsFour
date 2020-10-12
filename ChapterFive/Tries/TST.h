@@ -57,6 +57,8 @@ public:
         int length = search(root_, s, 0, 0);
         return s.substr(0, length);
     }
+
+    void ddelete(const std::string &key); // TODO 删除一个键
     bool empty() { return size_ == 0; }
     int size() { return size_; }
     bool contains(const std::string &key) { return get(key) != nullptr;}
@@ -81,11 +83,12 @@ typename TST<V>::Node* TST<V>::get(Node *x, const std::string &key, int d)
     if (x == nullptr) return nullptr;
     char ch = key[d];
     if (ch < x->c) return get(x->left, key, d);
-    if (ch > x->c) return get(x->right, key, d);
-    // ch == d 匹配上 key[d]
-    if (static_cast<size_t>(d) < key.size() - 1) return get(x->mid, key, d+1);
+    else if (ch > x->c) return get(x->right, key, d);
+    d++; // ch == x->c 匹配上 key[d]
+    if (static_cast<size_t>(d) < key.size()) return get(x->mid, key, d); // 没有结束继续查找
     return x; // 匹配结束
 }
+
 
 template <typename V>
 typename TST<V>::Node* TST<V>::put(Node *x, const std::string &key, const V &val, int d)
@@ -97,14 +100,16 @@ typename TST<V>::Node* TST<V>::put(Node *x, const std::string &key, const V &val
     }
     if (ch < x->c) x->left = put(x->left, key, val, d);
     else if (ch > x->c) x->right = put(x->right, key, val, d);
-    else if (static_cast<size_t>(d) < key.size() - 1) x->mid = put(x->mid, key, val, d+1);
-    // 已经找到
-    else if (x->val == nullptr) {
-        x->val = new V(val);
-        size_++;
-        return x;
+    else {
+        d++; // 又成功匹配一个字符
+        if (static_cast<size_t>(d) < key.size()) x->mid = put(x->mid, key, val, d);
+        // 已经找到
+        else if (x->val == nullptr) {
+            x->val = new V(val);
+            size_++;
+        }
+        else *(x->val) = val;
     }
-    else *(x->val) = val;
     return x;
 }
 
@@ -173,6 +178,9 @@ void TST<V>::collect(const Node *x, std::string &str, const std::string &pat, st
     }
 }
 
+/**
+*   @param d 当前匹配成功的字符数
+*/
 template <typename V>
 int TST<V>::search(const Node *x, const std::string &s, int d, int length)
 {
@@ -180,8 +188,9 @@ int TST<V>::search(const Node *x, const std::string &s, int d, int length)
     char ch = s[d];
     if (ch < x->c) return search(x->left, s, d, length);
     if (ch > x->c) return search(x->right, s, d, length);
-    if (x->val != nullptr) length = d+1;
-    if (static_cast<size_t>(d) < s.size()-1) return search(x->mid, s, d+1, length);
+    d++;
+    if (x->val != nullptr) length = d;
+    if (static_cast<size_t>(d) < s.size()) return search(x->mid, s, d, length);
     return length;
 }
 #endif // TST_H_INCLUDED

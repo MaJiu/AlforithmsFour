@@ -6,7 +6,7 @@
 * WC 测试数据 tale.txt tinyTale.txt leipzig1M.txt
 * TEST 测试数据 shells.txt
 */
-#define WC
+#define TEST
 
 /**
 *   TRIE R路单词查找树
@@ -28,7 +28,7 @@ using namespace std;
 void word_count();
 void print_detals(const vector<string> &ks);
 
-string::size_type min_len;
+
 int cnt = 0;
 string high_frequency = " ";
 clock_t t;
@@ -36,7 +36,6 @@ clock_t t;
 int main(int argc, char** args)
 {
     system("chcp 65001");
-    //min_len = stoi(args[1]);
     t = clock();
     string word;
     while (cin >> word) {
@@ -108,7 +107,6 @@ void word_count()
     }
     //st.ddelete(" ");
 
-    cout << "该文本包含的长度大于 " << min_len << " 单词以及对应的数量:\n";
     cout << "单词数量: " << cnt << "\n";
     cout << "出现频率最多的单词: ";
     cout << high_frequency << " " << *(st.get(high_frequency)) << "\n";
