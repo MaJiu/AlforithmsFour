@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1602511572 source:f:\algorithm\algorithmsfour\chapterfive\substringsearch\kmp.cpp
+	"KMP.h"
+
+1602511500 f:\algorithm\algorithmsfour\chapterfive\substringsearch\kmp.h
+	<string>
+
+1602510950 source:f:\algorithm\algorithmsfour\chapterfive\substringsearch\main.cpp
+	<iostream>
+	<string>
+	"KMP.h"
+
