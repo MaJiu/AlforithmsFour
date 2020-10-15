@@ -1,12 +1,26 @@
 # depslib dependency file v1.0
-1602511572 source:f:\algorithm\algorithmsfour\chapterfive\substringsearch\kmp.cpp
+1602511669 source:f:\algorithm\algorithmsfour\chapterfive\substringsearch\kmp.cpp
 	"KMP.h"
 
 1602511500 f:\algorithm\algorithmsfour\chapterfive\substringsearch\kmp.h
 	<string>
 
-1602510950 source:f:\algorithm\algorithmsfour\chapterfive\substringsearch\main.cpp
+1602766742 source:f:\algorithm\algorithmsfour\chapterfive\substringsearch\main.cpp
 	<iostream>
 	<string>
 	"KMP.h"
+	"RabinKarp.h"
+	"BoyerMoore.h"
+
+1602766441 source:f:\algorithm\algorithmsfour\chapterfive\substringsearch\rabinkarp.cpp
+	"RabinKarp.h"
+
+1602765877 f:\algorithm\algorithmsfour\chapterfive\substringsearch\rabinkarp.h
+	<string>
+
+1602767164 f:\algorithm\algorithmsfour\chapterfive\substringsearch\boyermoore.h
+	<string>
+
+1602767756 source:f:\algorithm\algorithmsfour\chapterfive\substringsearch\boyermoore.cpp
+	"BoyerMoore.h"
 

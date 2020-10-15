@@ -34,8 +34,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="BoyerMoore.cpp" />
+		<Unit filename="BoyerMoore.h" />
 		<Unit filename="KMP.cpp" />
 		<Unit filename="KMP.h" />
+		<Unit filename="RabinKarp.cpp" />
+		<Unit filename="RabinKarp.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
