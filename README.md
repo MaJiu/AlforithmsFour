@@ -331,3 +331,11 @@ AAAAAAAAAAAAAAAAAAAAAABAAAAA，和模式 BAAAAA
 
 ​	KMP 算法	很精巧，有限状态自动机也很值得研究，编译原理也有讲到过
 
+**2020年10月15日**
+
+​	Boyer-Moore 字符串匹配算法
+
+​	Rabin-Karp 指纹字符串查找算法
+
+​	蒙特卡洛算法 和 拉斯维加斯算法？
+
